@@ -1,0 +1,25 @@
+[user]
+	name = Vlad Zakharov
+	email = vzakhar@synopsys.com
+
+[alias]
+	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ls = log -n 10 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	undo = checkout --
+	show-files = diff-tree --no-commit-id --name-only -r
+
+[core]
+	editor = vim
+
+[sendemail]
+	smtpserver = mailhost
+	annotate = true
+
+[diff]
+	renames = copy
+
+[push]
+	default = matching
+
+[color]
+	diff = auto
